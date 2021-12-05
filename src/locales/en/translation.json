@@ -1,0 +1,37 @@
+{
+  "app": {
+    "title": "My Movie Info App",
+    "description": "Web app with information about the top-250 IMDB ranked movies"
+  },
+  "moviesListPage": {
+    "pageTitle": "IMDb top 250",
+    "description": "List with the 250 movies with best classification on IMDb",
+    "crew": "with {{crew}}",
+    "searchByTitle": "Search by movie title",
+    "sortBy": "Sort by",
+    "ascending": "Ascending",
+    "descending": "Descending",
+    "rank": "IMDb Ranking",
+    "title": "Title",
+    "year": "Year",
+    "imDbRatingCount": "Number of Classifications"
+  },
+  "movieDetailsPage": {
+    "description": "Details about the movie",
+    "originalTitle": "Original Title: {{title}}",
+    "director": "Director",
+    "directors": "Directors",
+    "writer": "Writer",
+    "writers": "Writers",
+    "actors": "Actors",
+    "character": "as {{character}}"
+  },
+  "notFoundPage": {
+    "title": "Page Not Found",
+    "accessFormPage": "Access Form Page"
+  },
+  "i18nFeature": {
+    "en": "English",
+    "pt": "Portuguese"
+  }
+}
