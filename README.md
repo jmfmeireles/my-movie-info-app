@@ -1,8 +1,11 @@
 # My Movie Info App
 
 Responsive web app with the purpose of displaying information about the top rated movies on IMDb.
+
 When you open this web app, it will be displayed a paginated list with the IMDb top-250 movies. For each movie, a tile with the title, poster, release year and IMDb rating is rendered. The user can filter by movie title, and can sort the movies by IMDb rating, movie title, year and IMDb rating votes, in an ascending or descending way.
+
 When you click on a movie tile, a detailed view is opened. Besides the information already displayed for each movie, it is also displayed a plot of the movie and information about the crew (for actors, you can click on each actor name and a dialog will be opened with a photo of this actor and the role he/she played on the movie). Want to see the trailer of the movie? By clicking on the movie poster, it will be opened if available.
+
 This web app uses the <a href="https://imdb-api.com/">IMDb API</a>. Please note that there is a limit for API requests (100), but you can generate your own API key and configure it on file app/src/resources/config.ts.
 
 ## Relevant dependencies
