@@ -85,15 +85,21 @@ export default class Movies {
         keyForSort as NumberKeys,
       )
         ? Number(a[keyForSort])
-        : a[keyForSort];
+        : a[keyForSort].toUpperCase();
       const convertedB = Object.values(NumberKeys).includes(
         keyForSort as NumberKeys,
       )
         ? Number(b[keyForSort])
-        : b[keyForSort];
+        : b[keyForSort].toUpperCase();
       return sorter.direction === SorterDirection.DESCENDING
-        ? convertedB - convertedA
-        : convertedA - convertedB;
+        ? Movies.sortFunction(convertedB, convertedA)
+        : Movies.sortFunction(convertedA, convertedB);
     });
+  }
+  private static sortFunction(
+    member1: string | number,
+    member2: string | number,
+  ): number {
+    return member1 > member2 ? 1 : member1 < member2 ? -1 : 0;
   }
 }

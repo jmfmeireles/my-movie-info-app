@@ -46,10 +46,11 @@ export default function FilterInput() {
   };
   return (
     <FilterWrapper>
-      <IconButton onClick={handleSearch}>
+      <IconButton onClick={handleSearch} data-testid="searchIcon">
         <SearchIcon />
       </IconButton>
       <InputBase
+        inputProps={{ 'data-testid': 'searchByTitle' }}
         placeholder={t('moviesListPage.searchByTitle')}
         onChange={handleFilterChange}
         onKeyDown={handleKeyDown}

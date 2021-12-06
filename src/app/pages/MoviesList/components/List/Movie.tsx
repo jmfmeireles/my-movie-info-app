@@ -20,7 +20,10 @@ export default function Movie(props: { movie: MovieMetadata }) {
   const { t } = useTranslation();
   const history = useHistory();
   return (
-    <MovieWrapper onClick={() => history.push(`/movie/${props.movie.id}`)}>
+    <MovieWrapper
+      data-testid="movieWrapper"
+      onClick={() => history.push(`/movie/${props.movie.id}`)}
+    >
       <Panel>
         <MovieImage>
           <img src={props.movie.image} alt={props.movie.title} />

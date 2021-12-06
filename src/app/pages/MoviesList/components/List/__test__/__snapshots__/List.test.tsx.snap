@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Renders list properly 1`] = `ReactWrapper {}`;
+
+exports[`List Renders page if results loading from API 1`] = `ReactWrapper {}`;
