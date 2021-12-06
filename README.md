@@ -18,7 +18,7 @@ After installing dependencies, you are ready to go. Please run the following com
 - _npm start_
 
 Having all the dependencies installed, you can all run the unit tests:
-- _npm run test
+- _npm run test_
 
 ## Release Notes
 
